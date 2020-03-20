@@ -1,0 +1,69 @@
+Removed Pin From Net: NetName=+12 Pin=NodeMCU-15
+Removed Pin From Net: NetName=+12 Pin=Power_ESP-1
+Removed Pin From Net: NetName=+12 Pin=Power_ESP-2
+Removed Pin From Net: NetName=NetQ1_2 Pin=R3-2
+Removed Pin From Net: NetName=NetQ4_2 Pin=R6-2
+Removed Pin From Net: NetName=NetQ5_2 Pin=R9-2
+Added Component: Designator=esp_VCC(HEADER_1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=Q6(HEADER_1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "TO, Flat Index; 3 In-Line, Axial Leads; Body Dia. 4.8mm; Leads 0.55 x 0.51 mm (max)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Q7(HEADER_1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "TO, Flat Index; 3 In-Line, Axial Leads; Body Dia. 4.8mm; Leads 0.55 x 0.51 mm (max)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Q8(HEADER_1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "TO, Flat Index; 3 In-Line, Axial Leads; Body Dia. 4.8mm; Leads 0.55 x 0.51 mm (max)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+12 Pin=esp_VCC-2
+Added Pin To Net: NetName=NetFita_led1_4 Pin=Q6-2
+Added Pin To Net: NetName=NetQ1_2 Pin=Q6-3
+Added Pin To Net: NetName=NetFita_led1_3 Pin=Q7-2
+Added Pin To Net: NetName=NetQ4_2 Pin=Q7-3
+Added Pin To Net: NetName=NetFita_led1_2 Pin=Q8-2
+Added Pin To Net: NetName=NetQ5_2 Pin=Q8-3
+Change Net Name : Old Net Name=NetClock1_3 New Net Name=NetClock_3
+Change Net Name : Old Net Name=NetClock1_4 New Net Name=NetClock_4
+Change Net Name : Old Net Name=NetFita_led1_2 New Net Name=NetFita_led_2
+Change Net Name : Old Net Name=NetFita_led1_3 New Net Name=NetFita_led_3
+Change Net Name : Old Net Name=NetFita_led1_4 New Net Name=NetFita_led_4
+Change Net Name : Old Net Name=NetNodeMCU1_21 New Net Name=NetNodeMCU_21
+Change Net Name : Old Net Name=NetNodeMCU1_22 New Net Name=NetNodeMCU_22
+Change Net Name : Old Net Name=NetNodeMCU1_23 New Net Name=NetNodeMCU_23
+Change Net Name : Old Net Name=NetNodeMCU1_26 New Net Name=NetNodeMCU_26
+Change Net Name : Old Net Name=NetNodeMCU1_27 New Net Name=NetNodeMCU_27
+Added Pin To Net: NetName=Netesp_VCC_1 Pin=esp_VCC-1
+Added Pin To Net: NetName=Netesp_VCC_1 Pin=NodeMCU-15
+Added Net: Name=Netesp_VCC_1
+Added Pin To Net: NetName=NetQ7_2 Pin=Q7-1
+Added Pin To Net: NetName=NetQ7_2 Pin=R6-2
+Added Net: Name=NetQ7_2
+Added Pin To Net: NetName=NetQ8_2 Pin=Q8-1
+Added Pin To Net: NetName=NetQ8_2 Pin=R9-2
+Added Net: Name=NetQ8_2
+Added Member To Class: ClassName=main Member=Component esp_VCC ?
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component Q6 NPN
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component Q7 NPN
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component Q8 NPN
+Added Room: Name=main
+Added Room: Name=relay_and_led_RGB

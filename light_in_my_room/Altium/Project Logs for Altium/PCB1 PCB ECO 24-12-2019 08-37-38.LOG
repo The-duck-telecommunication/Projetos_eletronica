@@ -1,0 +1,4 @@
+Added Member To Class: ClassName=main Member=Component Clock1 HEADER_1X6
+Added Member To Class: ClassName=main Member=Component NodeMCU1 ESP8266 Development kit
+Added Room: Name=main
+Added Room: Name=relay_and_led_RGB

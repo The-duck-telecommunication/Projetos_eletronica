@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=GND Pin=NodeMCU1-10
+Added Pin To Net: NetName=+5 Pin=NodeMCU1-11
+Added Pin To Net: NetName=GND Pin=NodeMCU1-17
+Added Pin To Net: NetName=GND Pin=NodeMCU1-24
+Added Pin To Net: NetName=+5 Pin=NodeMCU1-25

@@ -1,0 +1,21 @@
+Circuit: * C:\Users\wesle\Desktop\vacation\dobrador_tensao\full_bridge.asc
+
+.OP point found by inspection.
+
+Date: Fri Jan 17 10:50:36 2020
+Total elapsed time: 0.087 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 7560
+traniter = 7560
+tranpoints = 2054
+accept = 1604
+rejected = 450
+matrix size = 4
+fillins = 0
+solver = Normal
+Matrix Compiler1: 64 bytes object code size  0.0/0.0/[0.0]
+Matrix Compiler2: off  [0.1]/0.1/0.1
+

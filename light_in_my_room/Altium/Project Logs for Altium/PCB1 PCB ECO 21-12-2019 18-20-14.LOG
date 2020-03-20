@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=NetQ4_2 Pin=Q1-2
+Removed Pin From Net: NetName=NetQ4_2 Pin=Q5-2
+Removed Pin From Net: NetName=NetQ4_2 Pin=R3-2
+Removed Pin From Net: NetName=NetQ4_2 Pin=R9-2
+Change Component Footprint: Designator=Q2 Old Footprint=TO-226-AA New Footprint=HEADER_1X3
+Change Component Footprint: Designator=Q3 Old Footprint=TO-226-AA New Footprint=HEADER_1X3
+Added Pin To Net: NetName=NetQ1_2 Pin=Q1-2
+Added Pin To Net: NetName=NetQ5_2 Pin=Q5-2
+Added Pin To Net: NetName=NetQ1_2 Pin=R3-2
+Added Pin To Net: NetName=NetQ5_2 Pin=R9-2

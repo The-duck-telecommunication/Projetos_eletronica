@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=Net*2_A Pin=*4-A
+Removed Pin From Net: NetName=Net*4_K Pin=*4-K
+Removed Pin From Net: NetName=Net*3_A Pin=*5-A
+Removed Pin From Net: NetName=Net*5_K Pin=*5-K
+Change Component Footprint: Designator=*4 Old Footprint=LED_Axial_5mm New Footprint=HEADER_1X2
+Change Component Footprint: Designator=*5 Old Footprint=LED_Axial_5mm New Footprint=HEADER_1X2
+Added Pin To Net: NetName=Net*2_A Pin=*4-1
+Added Pin To Net: NetName=Net*4_K Pin=*4-2
+Added Pin To Net: NetName=Net*3_A Pin=*5-1
+Added Pin To Net: NetName=Net*5_K Pin=*5-2

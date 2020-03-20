@@ -1,0 +1,5 @@
+[1204/145035:ERROR:ipc_channel_win.cc(217)] pipe error: 109
+[1211/194148:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[1211/194148:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[1212/122304:ERROR:ipc_channel_win.cc(217)] pipe error: 109
+[1212/123019:ERROR:ipc_channel_win.cc(217)] pipe error: 109

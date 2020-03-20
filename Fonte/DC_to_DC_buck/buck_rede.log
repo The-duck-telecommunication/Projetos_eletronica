@@ -1,0 +1,23 @@
+Circuit: * C:\Users\wesle\Desktop\projetos\Fonte\DC_to_DC_buck\buck_rede.asc
+
+.OP point found by inspection.
+Heightened Def Con from 0.00442363 to 0.00442363
+Heightened Def Con from 0.0170978 to 0.0170978
+
+Date: Tue Jan 21 21:23:27 2020
+Total elapsed time: 3.618 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 669981
+traniter = 669981
+tranpoints = 216146
+accept = 172177
+rejected = 43971
+matrix size = 16
+fillins = 3
+solver = Normal
+Matrix Compiler1: 944 bytes object code size  0.7/0.5/[0.4]
+Matrix Compiler2: off  [0.4]/0.6/0.5
+

@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=NetD5_1 Pin=D5-1
+Removed Pin From Net: NetName=Net*1_8 Pin=D5-2
+Removed Pin From Net: NetName=NetD8_1 Pin=D8-1
+Removed Pin From Net: NetName=NetD5_1 Pin=D8-2
+Change Component Footprint: Designator=D5 Old Footprint=DIODE-0.7 New Footprint=DIO_PTH_5MM
+Change Component Footprint: Designator=D8 Old Footprint=DIODE-0.7 New Footprint=DIO_PTH_5MM
+Added Pin To Net: NetName=NetD5_1 Pin=D5-A
+Added Pin To Net: NetName=Net*1_8 Pin=D5-K
+Added Pin To Net: NetName=NetD8_1 Pin=D8-A
+Added Pin To Net: NetName=NetD5_1 Pin=D8-K

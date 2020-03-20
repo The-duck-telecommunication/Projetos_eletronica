@@ -1,0 +1,24 @@
+Legenda
+	V - Concluido
+	T - Trabalhando
+	F - deu ruim, tipo muito!
+
+lm555
+- [V] Astable mode.
+- [V] Constant frequency.
+
+Fonte
+- [ ] Ajustavem com regulador linear.
+- [ ] Tensão fixa com regulador.
+- [ ] tensão fixa com diodo zenner. 
+
+- [ ] Fonte capacitiva.
+- [ ] Fonte chaveada.
+
+Controle
+- [ ] Radio alarme
+- [ ] Carrinho controle remoto
+
+Outros
+- [T] nRF24L01
+- [T] Luz RGB do quarto

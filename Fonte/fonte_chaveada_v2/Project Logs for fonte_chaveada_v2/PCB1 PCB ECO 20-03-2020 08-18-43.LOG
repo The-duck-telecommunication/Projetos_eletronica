@@ -1,0 +1,7 @@
+Added Component: Designator=CN2(MKDSN02)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Digikey"; Value = "277-5893-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "MKDS"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetCN2_1 Pin=CN2-1
+Added Pin To Net: NetName=NetCN2_2 Pin=CN2-2
+Added Member To Class: ClassName=fonte_chaveada Member=Component CN2 Rede AC

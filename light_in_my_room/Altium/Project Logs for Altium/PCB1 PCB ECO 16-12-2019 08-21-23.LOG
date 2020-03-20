@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=Q1 Old Footprint=SOT-23B_L New Footprint=CN_KK_3_5045-3
+Change Component Footprint: Designator=Q4 Old Footprint=SOT-23B_L New Footprint=CN_KK_3_5045-3
+Change Component Footprint: Designator=Q5 Old Footprint=SOT-23B_L New Footprint=CN_KK_3_5045-3
+Added Room: Name=main
+Added Room: Name=relay_and_led_RGB

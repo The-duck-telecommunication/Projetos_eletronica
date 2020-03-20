@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=NetFita_led1_4 Pin=Q1-1
+Removed Pin From Net: NetName=NetQ1_2 Pin=Q1-2
+Added Pin To Net: NetName=NetQ1_2 Pin=Q1-1
+Added Pin To Net: NetName=NetFita_led1_4 Pin=Q1-2

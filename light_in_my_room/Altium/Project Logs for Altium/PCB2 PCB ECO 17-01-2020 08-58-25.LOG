@@ -1,0 +1,341 @@
+Added Component: Designator=*1(HEADER_1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=*2(DIO_PTH_DO41)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=*3(DIO_PTH_DO41)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=*4(HEADER_1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=*5(HEADER_1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=*6(HEADER_1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=*7(HEADER_1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=*8(HEADER_1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=aliemntação(CN_KRE_2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=Button1(HEADER_1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=Clock1(HEADER_1X6)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=esp_VCC(HEADER_1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=Fita_led(CN_KK_4_5045-4)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=NodeMCU(DIV_NodeMCU_Socket)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Reference"; Value = "https://bennthomsen.files.wordpress.com/2015/12/nodemcu_pinout_700-2.png"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Schematic"; Value = "https://raw.githubusercontent.com/nodemcu/nodemcu-devkit/master/Documents/NODEMCU_DEVKIT_SCH.png"; VariantName = "[No Variations]"
+Added Component: Designator=Q1(HEADER_1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "TO, Flat Index; 3 In-Line, Axial Leads; Body Dia. 4.8mm; Leads 0.55 x 0.51 mm (max)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Q2(HEADER_1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "TO, Flat Index; 3 In-Line, Axial Leads; Body Dia. 4.8mm; Leads 0.55 x 0.51 mm (max)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Q3(HEADER_1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "TO, Flat Index; 3 In-Line, Axial Leads; Body Dia. 4.8mm; Leads 0.55 x 0.51 mm (max)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Q4(HEADER_1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "TO, Flat Index; 3 In-Line, Axial Leads; Body Dia. 4.8mm; Leads 0.55 x 0.51 mm (max)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Q5(HEADER_1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "TO, Flat Index; 3 In-Line, Axial Leads; Body Dia. 4.8mm; Leads 0.55 x 0.51 mm (max)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Q6(HEADER_1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "TO, Flat Index; 3 In-Line, Axial Leads; Body Dia. 4.8mm; Leads 0.55 x 0.51 mm (max)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Q7(HEADER_1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "TO, Flat Index; 3 In-Line, Axial Leads; Body Dia. 4.8mm; Leads 0.55 x 0.51 mm (max)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Q8(HEADER_1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "TO, Flat Index; 3 In-Line, Axial Leads; Body Dia. 4.8mm; Leads 0.55 x 0.51 mm (max)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=R1(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1M"; VariantName = "[No Variations]"
+Added Component: Designator=R2(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "330"; VariantName = "[No Variations]"
+Added Component: Designator=R3(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R4(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R5(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R6(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R7(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "330"; VariantName = "[No Variations]"
+Added Component: Designator=R8(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "330"; VariantName = "[No Variations]"
+Added Component: Designator=R9(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R10(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "330"; VariantName = "[No Variations]"
+Added Component: Designator=R11(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "330"; VariantName = "[No Variations]"
+Added Component: Designator=R12(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "330"; VariantName = "[No Variations]"
+Added Component: Designator=rede_A1(CN_KRE_3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=rede_B1(CN_KRE_3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=RL1(DIV_RELE_5551)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "RELEICR5551"; VariantName = "[No Variations]"
+Added Component: Designator=RL2(DIV_RELE_5551)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "RELEICR5551"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Net*1_A Pin=*1-1
+Added Pin To Net: NetName=Net*1_K Pin=*1-2
+Added Pin To Net: NetName=Net*2_A Pin=*2-A
+Added Pin To Net: NetName=+12 Pin=*2-K
+Added Pin To Net: NetName=Net*3_A Pin=*3-A
+Added Pin To Net: NetName=+12 Pin=*3-K
+Added Pin To Net: NetName=Net*2_A Pin=*4-1
+Added Pin To Net: NetName=Net*4_K Pin=*4-2
+Added Pin To Net: NetName=Net*3_A Pin=*5-1
+Added Pin To Net: NetName=Net*5_K Pin=*5-2
+Added Pin To Net: NetName=+12 Pin=*6-1
+Added Pin To Net: NetName=Net*6_K Pin=*6-2
+Added Pin To Net: NetName=+12 Pin=*7-1
+Added Pin To Net: NetName=Net*7_K Pin=*7-2
+Added Pin To Net: NetName=+12 Pin=*8-1
+Added Pin To Net: NetName=Net*8_K Pin=*8-2
+Added Pin To Net: NetName=+12 Pin=aliemntação-1
+Added Pin To Net: NetName=GND Pin=aliemntação-2
+Added Pin To Net: NetName=+3v3 Pin=Button1-1
+Added Pin To Net: NetName=Net*1_A Pin=Button1-2
+Added Pin To Net: NetName=NetClock1_3 Pin=Clock1-3
+Added Pin To Net: NetName=NetClock1_4 Pin=Clock1-4
+Added Pin To Net: NetName=+3v3 Pin=Clock1-5
+Added Pin To Net: NetName=GND Pin=Clock1-6
+Added Pin To Net: NetName=Netesp_VCC_1 Pin=esp_VCC-1
+Added Pin To Net: NetName=+12 Pin=esp_VCC-2
+Added Pin To Net: NetName=+12 Pin=Fita_led-1
+Added Pin To Net: NetName=NetFita_led_2 Pin=Fita_led-2
+Added Pin To Net: NetName=NetFita_led_3 Pin=Fita_led-3
+Added Pin To Net: NetName=NetFita_led_4 Pin=Fita_led-4
+Added Pin To Net: NetName=Net*1_A Pin=NodeMCU-1
+Added Pin To Net: NetName=GND Pin=NodeMCU-14
+Added Pin To Net: NetName=Netesp_VCC_1 Pin=NodeMCU-15
+Added Pin To Net: NetName=+3v3 Pin=NodeMCU-16
+Added Pin To Net: NetName=GND Pin=NodeMCU-17
+Added Pin To Net: NetName=NetNodeMCU_21 Pin=NodeMCU-21
+Added Pin To Net: NetName=NetNodeMCU_22 Pin=NodeMCU-22
+Added Pin To Net: NetName=NetNodeMCU_23 Pin=NodeMCU-23
+Added Pin To Net: NetName=NetNodeMCU_26 Pin=NodeMCU-26
+Added Pin To Net: NetName=NetNodeMCU_27 Pin=NodeMCU-27
+Added Pin To Net: NetName=NetClock1_4 Pin=NodeMCU-28
+Added Pin To Net: NetName=NetClock1_3 Pin=NodeMCU-29
+Added Pin To Net: NetName=NetQ1_2 Pin=Q1-1
+Added Pin To Net: NetName=NetFita_led_4 Pin=Q1-2
+Added Pin To Net: NetName=GND Pin=Q1-3
+Added Pin To Net: NetName=Net*2_A Pin=Q2-1
+Added Pin To Net: NetName=NetQ2_2 Pin=Q2-2
+Added Pin To Net: NetName=GND Pin=Q2-3
+Added Pin To Net: NetName=Net*3_A Pin=Q3-1
+Added Pin To Net: NetName=NetQ3_2 Pin=Q3-2
+Added Pin To Net: NetName=GND Pin=Q3-3
+Added Pin To Net: NetName=NetQ4_2 Pin=Q4-1
+Added Pin To Net: NetName=NetFita_led_3 Pin=Q4-2
+Added Pin To Net: NetName=GND Pin=Q4-3
+Added Pin To Net: NetName=NetQ5_2 Pin=Q5-1
+Added Pin To Net: NetName=NetFita_led_2 Pin=Q5-2
+Added Pin To Net: NetName=GND Pin=Q5-3
+Added Pin To Net: NetName=NetQ6_2 Pin=Q6-1
+Added Pin To Net: NetName=NetFita_led_4 Pin=Q6-2
+Added Pin To Net: NetName=NetQ1_2 Pin=Q6-3
+Added Pin To Net: NetName=NetQ7_2 Pin=Q7-1
+Added Pin To Net: NetName=NetFita_led_3 Pin=Q7-2
+Added Pin To Net: NetName=NetQ4_2 Pin=Q7-3
+Added Pin To Net: NetName=NetQ8_2 Pin=Q8-1
+Added Pin To Net: NetName=NetFita_led_2 Pin=Q8-2
+Added Pin To Net: NetName=NetQ5_2 Pin=Q8-3
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=Net*1_A Pin=R1-2
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=Net*1_K Pin=R2-2
+Added Pin To Net: NetName=NetNodeMCU_23 Pin=R3-1
+Added Pin To Net: NetName=NetQ6_2 Pin=R3-2
+Added Pin To Net: NetName=NetNodeMCU_27 Pin=R4-1
+Added Pin To Net: NetName=NetQ2_2 Pin=R4-2
+Added Pin To Net: NetName=NetNodeMCU_26 Pin=R5-1
+Added Pin To Net: NetName=NetQ3_2 Pin=R5-2
+Added Pin To Net: NetName=NetNodeMCU_22 Pin=R6-1
+Added Pin To Net: NetName=NetQ7_2 Pin=R6-2
+Added Pin To Net: NetName=GND Pin=R7-1
+Added Pin To Net: NetName=Net*4_K Pin=R7-2
+Added Pin To Net: NetName=GND Pin=R8-1
+Added Pin To Net: NetName=Net*5_K Pin=R8-2
+Added Pin To Net: NetName=NetNodeMCU_21 Pin=R9-1
+Added Pin To Net: NetName=NetQ8_2 Pin=R9-2
+Added Pin To Net: NetName=NetFita_led_4 Pin=R10-1
+Added Pin To Net: NetName=Net*6_K Pin=R10-2
+Added Pin To Net: NetName=Net*7_K Pin=R11-1
+Added Pin To Net: NetName=NetFita_led_3 Pin=R11-2
+Added Pin To Net: NetName=Net*8_K Pin=R12-1
+Added Pin To Net: NetName=NetFita_led_2 Pin=R12-2
+Added Pin To Net: NetName=Netrede_A1_1 Pin=rede_A1-1
+Added Pin To Net: NetName=Netrede_A1_2 Pin=rede_A1-2
+Added Pin To Net: NetName=Netrede_A1_3 Pin=rede_A1-3
+Added Pin To Net: NetName=Netrede_B1_1 Pin=rede_B1-1
+Added Pin To Net: NetName=Netrede_A1_2 Pin=rede_B1-2
+Added Pin To Net: NetName=Netrede_B1_3 Pin=rede_B1-3
+Added Pin To Net: NetName=Netrede_A1_2 Pin=RL1-1
+Added Pin To Net: NetName=Netrede_A1_1 Pin=RL1-2
+Added Pin To Net: NetName=Netrede_A1_3 Pin=RL1-3
+Added Pin To Net: NetName=+12 Pin=RL1-4
+Added Pin To Net: NetName=Net*2_A Pin=RL1-5
+Added Pin To Net: NetName=Netrede_A1_2 Pin=RL2-1
+Added Pin To Net: NetName=Netrede_B1_1 Pin=RL2-2
+Added Pin To Net: NetName=Netrede_B1_3 Pin=RL2-3
+Added Pin To Net: NetName=+12 Pin=RL2-4
+Added Pin To Net: NetName=Net*3_A Pin=RL2-5
+Added Member To Class: ClassName=Botão Member=Component *1 LED_AXIAL_5MM
+Added Member To Class: ClassName=Relay de carga Member=Component *2 DIO_PTH_1N4007
+Added Member To Class: ClassName=Relay de carga Member=Component *3 DIO_PTH_1N4007
+Added Member To Class: ClassName=Relay de carga Member=Component *4 LED_AXIAL_5MM
+Added Member To Class: ClassName=Relay de carga Member=Component *5 LED_AXIAL_5MM
+Added Member To Class: ClassName=Fita LED Member=Component *6 LED_AXIAL_5MM
+Added Member To Class: ClassName=Fita LED Member=Component *7 LED_AXIAL_5MM
+Added Member To Class: ClassName=Fita LED Member=Component *8 LED_AXIAL_5MM
+Added Member To Class: ClassName=Microcontrolador ESP8266 Member=Component aliemntação ?
+Added Member To Class: ClassName=Botão Member=Component Button1 ?
+Added Member To Class: ClassName=Relógio digital Member=Component Clock1 HEADER_1X6
+Added Member To Class: ClassName=Microcontrolador ESP8266 Member=Component esp_VCC ?
+Added Member To Class: ClassName=Fita LED Member=Component Fita_led CN_KK_4
+Added Member To Class: ClassName=Microcontrolador ESP8266 Member=Component NodeMCU ESP8266 Development kit
+Added Member To Class: ClassName=Fita LED Member=Component Q1 NPN
+Added Member To Class: ClassName=Relay de carga Member=Component Q2 NPN
+Added Member To Class: ClassName=Relay de carga Member=Component Q3 NPN
+Added Member To Class: ClassName=Fita LED Member=Component Q4 NPN
+Added Member To Class: ClassName=Fita LED Member=Component Q5 NPN
+Added Member To Class: ClassName=Fita LED Member=Component Q6 NPN
+Added Member To Class: ClassName=Fita LED Member=Component Q7 NPN
+Added Member To Class: ClassName=Fita LED Member=Component Q8 NPN
+Added Member To Class: ClassName=Botão Member=Component R1 1M
+Added Member To Class: ClassName=Botão Member=Component R2 
+Added Member To Class: ClassName=Fita LED Member=Component R3 10k
+Added Member To Class: ClassName=Relay de carga Member=Component R4 10k
+Added Member To Class: ClassName=Relay de carga Member=Component R5 10k
+Added Member To Class: ClassName=Fita LED Member=Component R6 10k
+Added Member To Class: ClassName=Relay de carga Member=Component R7 330
+Added Member To Class: ClassName=Relay de carga Member=Component R8 330
+Added Member To Class: ClassName=Fita LED Member=Component R9 10k
+Added Member To Class: ClassName=Fita LED Member=Component R10 330
+Added Member To Class: ClassName=Fita LED Member=Component R11 330
+Added Member To Class: ClassName=Fita LED Member=Component R12 330
+Added Member To Class: ClassName=Relay de carga Member=Component rede_A1 ?
+Added Member To Class: ClassName=Relay de carga Member=Component rede_B1 ?
+Added Member To Class: ClassName=Relay de carga Member=Component RL1 RELEICR5551
+Added Member To Class: ClassName=Relay de carga Member=Component RL2 RELEICR5551
+Added Room: Name=Botão
+Added Room: Name=Fita LED
+Added Room: Name=Microcontrolador ESP8266
+Added Room: Name=Relay de carga
+Added Room: Name=Relógio digital

@@ -1,0 +1,21 @@
+Circuit: * C:\Users\wesle\Desktop\vacation\lm555\Constant_Frequency\LTspice\Draft1.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Sun Dec 15 16:38:06 2019
+Total elapsed time: 0.114 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3945
+traniter = 3922
+tranpoints = 1438
+accept = 1344
+rejected = 94
+matrix size = 16
+fillins = 2
+solver = Normal
+Matrix Compiler1: 644 bytes object code size  0.2/0.2/[0.1]
+Matrix Compiler2: 990 bytes object code size  0.2/0.2/[0.1]
+

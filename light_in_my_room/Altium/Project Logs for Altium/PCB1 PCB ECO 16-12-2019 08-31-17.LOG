@@ -1,0 +1,254 @@
+Added Component: Designator=*1(LED_Axial_5mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=*2(DIO_PTH_DO41)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=*3(DIO_PTH_DO41)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=*4(LED_Axial_5mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=*5(LED_Axial_5mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=Clock1(HEADER_1X6)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=CN1(CN_KRE_3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=CN2(CN_KRE_3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=CN3(CN_KRE_2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=Fita_led1(CN_KK_4_5045-4)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=NodeMCU1(DIV_NodeMCU_Socket)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Reference"; Value = "https://bennthomsen.files.wordpress.com/2015/12/nodemcu_pinout_700-2.png"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Schematic"; Value = "https://raw.githubusercontent.com/nodemcu/nodemcu-devkit/master/Documents/NODEMCU_DEVKIT_SCH.png"; VariantName = "[No Variations]"
+Added Component: Designator=Q1(CN_KK_3_5045-3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "3-Pin SOT-23 Package 0.95 mm Pitch, 2.4 mm Lead Span"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SOT-23B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Aug-1999"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Q2(TO-226-AA)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "TO, Flat Index; 3 In-Line, Axial Leads; Body Dia. 4.8mm; Leads 0.55 x 0.51 mm (max)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Q3(TO-226-AA)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "TO, Flat Index; 3 In-Line, Axial Leads; Body Dia. 4.8mm; Leads 0.55 x 0.51 mm (max)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Q4(CN_KK_3_5045-3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "3-Pin SOT-23 Package 0.95 mm Pitch, 2.4 mm Lead Span"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SOT-23B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Aug-1999"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Q5(CN_KK_3_5045-3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "3-Pin SOT-23 Package 0.95 mm Pitch, 2.4 mm Lead Span"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SOT-23B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Aug-1999"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=R1(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1M"; VariantName = "[No Variations]"
+Added Component: Designator=R2(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "330"; VariantName = "[No Variations]"
+Added Component: Designator=R3(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R4(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R5(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R6(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R7(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "330"; VariantName = "[No Variations]"
+Added Component: Designator=R8(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "330"; VariantName = "[No Variations]"
+Added Component: Designator=R9(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=RL1(DIV_RELE_5551)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "RELEICR5551"; VariantName = "[No Variations]"
+Added Component: Designator=RL2(DIV_RELE_5551)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "RELEICR5551"; VariantName = "[No Variations]"
+Added Component: Designator=X1(HEADER_1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Net*1_A Pin=*1-A
+Added Pin To Net: NetName=Net*1_K Pin=*1-K
+Added Pin To Net: NetName=Net*2_A Pin=*2-A
+Added Pin To Net: NetName=+12 Pin=*2-K
+Added Pin To Net: NetName=Net*3_A Pin=*3-A
+Added Pin To Net: NetName=+12 Pin=*3-K
+Added Pin To Net: NetName=Net*2_A Pin=*4-A
+Added Pin To Net: NetName=Net*4_K Pin=*4-K
+Added Pin To Net: NetName=Net*3_A Pin=*5-A
+Added Pin To Net: NetName=Net*5_K Pin=*5-K
+Added Pin To Net: NetName=NetClock1_3 Pin=Clock1-3
+Added Pin To Net: NetName=NetClock1_4 Pin=Clock1-4
+Added Pin To Net: NetName=+5 Pin=Clock1-5
+Added Pin To Net: NetName=GND Pin=Clock1-6
+Added Pin To Net: NetName=NetCN1_1 Pin=CN1-1
+Added Pin To Net: NetName=NetCN1_2 Pin=CN1-2
+Added Pin To Net: NetName=NetCN1_3 Pin=CN1-3
+Added Pin To Net: NetName=NetCN2_1 Pin=CN2-1
+Added Pin To Net: NetName=NetCN1_2 Pin=CN2-2
+Added Pin To Net: NetName=NetCN2_3 Pin=CN2-3
+Added Pin To Net: NetName=+12 Pin=CN3-1
+Added Pin To Net: NetName=GND Pin=CN3-2
+Added Pin To Net: NetName=GND Pin=Fita_led1-1
+Added Pin To Net: NetName=NetFita_led1_2 Pin=Fita_led1-2
+Added Pin To Net: NetName=NetFita_led1_3 Pin=Fita_led1-3
+Added Pin To Net: NetName=NetFita_led1_4 Pin=Fita_led1-4
+Added Pin To Net: NetName=Net*1_A Pin=NodeMCU1-1
+Added Pin To Net: NetName=GND Pin=NodeMCU1-10
+Added Pin To Net: NetName=+5 Pin=NodeMCU1-11
+Added Pin To Net: NetName=GND Pin=NodeMCU1-14
+Added Pin To Net: NetName=+12 Pin=NodeMCU1-15
+Added Pin To Net: NetName=+5 Pin=NodeMCU1-16
+Added Pin To Net: NetName=GND Pin=NodeMCU1-17
+Added Pin To Net: NetName=NetNodeMCU1_21 Pin=NodeMCU1-21
+Added Pin To Net: NetName=NetNodeMCU1_22 Pin=NodeMCU1-22
+Added Pin To Net: NetName=NetNodeMCU1_23 Pin=NodeMCU1-23
+Added Pin To Net: NetName=GND Pin=NodeMCU1-24
+Added Pin To Net: NetName=+5 Pin=NodeMCU1-25
+Added Pin To Net: NetName=NetNodeMCU1_26 Pin=NodeMCU1-26
+Added Pin To Net: NetName=NetNodeMCU1_27 Pin=NodeMCU1-27
+Added Pin To Net: NetName=NetClock1_4 Pin=NodeMCU1-28
+Added Pin To Net: NetName=NetClock1_3 Pin=NodeMCU1-29
+Added Pin To Net: NetName=NetFita_led1_4 Pin=Q1-1
+Added Pin To Net: NetName=NetQ1_2 Pin=Q1-2
+Added Pin To Net: NetName=+12 Pin=Q1-3
+Added Pin To Net: NetName=Net*2_A Pin=Q2-1
+Added Pin To Net: NetName=NetQ2_2 Pin=Q2-2
+Added Pin To Net: NetName=GND Pin=Q2-3
+Added Pin To Net: NetName=Net*3_A Pin=Q3-1
+Added Pin To Net: NetName=NetQ3_2 Pin=Q3-2
+Added Pin To Net: NetName=GND Pin=Q3-3
+Added Pin To Net: NetName=NetFita_led1_3 Pin=Q4-1
+Added Pin To Net: NetName=NetQ4_2 Pin=Q4-2
+Added Pin To Net: NetName=+12 Pin=Q4-3
+Added Pin To Net: NetName=NetFita_led1_2 Pin=Q5-1
+Added Pin To Net: NetName=NetQ5_2 Pin=Q5-2
+Added Pin To Net: NetName=+12 Pin=Q5-3
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=Net*1_A Pin=R1-2
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=Net*1_K Pin=R2-2
+Added Pin To Net: NetName=NetNodeMCU1_23 Pin=R3-1
+Added Pin To Net: NetName=NetQ1_2 Pin=R3-2
+Added Pin To Net: NetName=NetNodeMCU1_27 Pin=R4-1
+Added Pin To Net: NetName=NetQ2_2 Pin=R4-2
+Added Pin To Net: NetName=NetNodeMCU1_26 Pin=R5-1
+Added Pin To Net: NetName=NetQ3_2 Pin=R5-2
+Added Pin To Net: NetName=NetNodeMCU1_22 Pin=R6-1
+Added Pin To Net: NetName=NetQ4_2 Pin=R6-2
+Added Pin To Net: NetName=GND Pin=R7-1
+Added Pin To Net: NetName=Net*4_K Pin=R7-2
+Added Pin To Net: NetName=GND Pin=R8-1
+Added Pin To Net: NetName=Net*5_K Pin=R8-2
+Added Pin To Net: NetName=NetNodeMCU1_21 Pin=R9-1
+Added Pin To Net: NetName=NetQ5_2 Pin=R9-2
+Added Pin To Net: NetName=NetCN1_2 Pin=RL1-1
+Added Pin To Net: NetName=NetCN1_1 Pin=RL1-2
+Added Pin To Net: NetName=NetCN1_3 Pin=RL1-3
+Added Pin To Net: NetName=+12 Pin=RL1-4
+Added Pin To Net: NetName=Net*2_A Pin=RL1-5
+Added Pin To Net: NetName=NetCN1_2 Pin=RL2-1
+Added Pin To Net: NetName=NetCN2_1 Pin=RL2-2
+Added Pin To Net: NetName=NetCN2_3 Pin=RL2-3
+Added Pin To Net: NetName=+12 Pin=RL2-4
+Added Pin To Net: NetName=Net*3_A Pin=RL2-5
+Added Pin To Net: NetName=+5 Pin=X1-1
+Added Pin To Net: NetName=Net*1_A Pin=X1-2
+Added Member To Class: ClassName=main Member=Component *1 LED_AXIAL_5MM
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component *2 DIO_PTH_1N4007
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component *3 DIO_PTH_1N4007
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component *4 LED_AXIAL_5MM
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component *5 LED_AXIAL_5MM
+Added Member To Class: ClassName=main Member=Component Clock1 HEADER_1X6
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component CN1 ?
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component CN2 ?
+Added Member To Class: ClassName=main Member=Component CN3 ?
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component Fita_led1 CN_KK_4
+Added Member To Class: ClassName=main Member=Component NodeMCU1 ESP8266 Development kit
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component Q1 PNP
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component Q2 NPN
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component Q3 NPN
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component Q4 PNP
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component Q5 PNP
+Added Member To Class: ClassName=main Member=Component R1 1M
+Added Member To Class: ClassName=main Member=Component R2 
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component R3 10k
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component R4 10k
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component R5 10k
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component R6 10k
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component R7 330
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component R8 330
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component R9 10k
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component RL1 RELEICR5551
+Added Member To Class: ClassName=relay_and_led_RGB Member=Component RL2 RELEICR5551
+Added Member To Class: ClassName=main Member=Component X1 ?
+Added Room: Name=main
+Added Room: Name=relay_and_led_RGB

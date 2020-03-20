@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=P1 Old Footprint=HEADER_1X2 New Footprint=HDR1X2
+Change Component Footprint: Designator=P2 Old Footprint=HEADER_1X2 New Footprint=HDR1X2
+Change Component Footprint: Designator=D3 Old Footprint=LED_AXIAL_3MM New Footprint=LED-0
+Change Component Footprint: Designator=D2 Old Footprint=LED_Axial_5mm New Footprint=LED-0

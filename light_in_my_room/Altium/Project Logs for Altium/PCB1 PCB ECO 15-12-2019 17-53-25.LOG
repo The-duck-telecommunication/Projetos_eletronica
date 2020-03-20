@@ -1,0 +1,64 @@
+Added Component: Designator=*?(LED_Axial_5mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=*(DIO_PTH_DO41)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=*(DIO_PTH_DO41)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=*(LED_Axial_5mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=CN?(CN_KK_4_5045-4)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=NodeMCU(DIV_NodeMCU_Socket)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Reference"; Value = "https://bennthomsen.files.wordpress.com/2015/12/nodemcu_pinout_700-2.png"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Schematic"; Value = "https://raw.githubusercontent.com/nodemcu/nodemcu-devkit/master/Documents/NODEMCU_DEVKIT_SCH.png"; VariantName = "[No Variations]"
+Added Component: Designator=R?(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=R?(RES_PTH_7.62MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Component: Designator=RL?(DIV_RELE_5551)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "RELEICR5551"; VariantName = "[No Variations]"
+Added Component: Designator=RL?(DIV_RELE_5551)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "RELEICR5551"; VariantName = "[No Variations]"
+Added Component: Designator=X?(HEADER_1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Validação"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "?"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5 Pin=*-A
+Added Pin To Net: NetName=+5 Pin=CN?-4
+Added Net: Name=+5
+Added Pin To Net: NetName=GND Pin=CN?-1
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Net: Name=GND
+Added Pin To Net: NetName=Net*?_A Pin=*?-A
+Added Net: Name=Net*?_A
+Added Pin To Net: NetName=Net*?_K Pin=*?-K
+Added Pin To Net: NetName=Net*?_K Pin=R?-2
+Added Net: Name=Net*?_K
+Added Pin To Net: NetName=Net*_A Pin=*-A
+Added Pin To Net: NetName=Net*_A Pin=RL?-5
+Added Net: Name=Net*_A
+Added Pin To Net: NetName=Net*_K Pin=*-K
+Added Pin To Net: NetName=Net*_K Pin=R?-2
+Added Net: Name=Net*_K
+Added Class: Name=Sheet1
+Added Room: Name=Sheet1

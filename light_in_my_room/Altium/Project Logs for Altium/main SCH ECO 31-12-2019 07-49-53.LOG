@@ -1,0 +1,3 @@
+Change Component Designator: OldDesignator=Clock1 NewDesignator=Clock
+Change Component Designator: OldDesignator=Fita_led1 NewDesignator=Fita_led
+Change Component Designator: OldDesignator=NodeMCU1 NewDesignator=NodeMCU
