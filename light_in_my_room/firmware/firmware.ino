@@ -5,8 +5,8 @@ int led_red = 14,
 int set = 2, set_old = 2;
 
 bool nightMode = false;
-int tempo_salve;
-float tempo_max = 3600000;
+float tempo_salve, tempo_left;
+float tempo_max = 3600000; //1h => 3600000
 
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
@@ -112,9 +112,9 @@ void loop()
   if (nightMode)
     shunt_down_time();
 
-//  Serial.print ("valor desse trem aqui: ");
-//  Serial.println(nightMode);
-//  delay(50);
+  Serial.print ("valor desse trem aqui: ");
+  Serial.println(nightMode);
+  delay(50);
 }
 
 
@@ -238,7 +238,7 @@ void wifi ()
       nightMode = !nightMode;
       tempo_salve = millis();
 
-      Serial.print ("valor desse trem aqui: ");
+      Serial.print ("Entrou aquiiiiiiiiiii valor desse trem aqui: ");
       Serial.println(nightMode);
     }
 
@@ -257,6 +257,7 @@ String all_html ()
 
   _html += "<!DOCTYPE html><html>";
   _html += "<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">";
+  _html += "<meta http-equiv=\"refresh\" content=\"10; url=http://192.168.1.25\" >";
   _html += "<link rel=\"icon\" href=\"data:,\">";
 
   _html += "<style>";
@@ -291,7 +292,7 @@ String all_html ()
   // Web Page Heading
   _html += "<body>";
 
-  _html += "<h1 style=\"text-align: center\">My Web page :D</h1>";
+  _html += "<a href=\"http://192.168.1.25\" style=\"text-decoration: none;color: black;\"><h1 style=\"text-align: center\">Led bedroom</h1></a>";
 
   _html += "<div class=\"btn-group\" style=\"width:100%\">";
 
@@ -300,39 +301,63 @@ String all_html ()
 
   _html += "</div>";
 
-  _html += "<br>";
-  _html += "<p>Modo atual: ";
-  if (set == 0)
-    _html += "Desligado</p>";
-  else if ((set >= 1) && (set <= 2))
-    _html += "Funcoes</p>";
-  else if ((set >= 3) && (set <= 5))
-    _html += "Cores solidas</p>";
-  else if ((set >= 6) && (set <= 13))
-    _html += "Cores</p>";
+  // _html += "<br>";
+  // _html += "<p>Modo atual: ";
+  // if (set == 0)
+  //   _html += "Desligado</p>";
+  // else if ((set >= 1) && (set <= 2))
+  //   _html += "Funcoes</p>";
+  // else if ((set >= 3) && (set <= 5))
+  //   _html += "Cores solidas</p>";
+  // else if ((set >= 6) && (set <= 13))
+  //   _html += "Cores</p>";
 
 
-  _html += "<br>";
+  _html += "<hr>";
 
-  _html += "<p>Algumas funcoes:</p>";
+  _html += "<p style=\"text-align: center\">Funcoes:</p>";
   _html += "<div class=\"btn-group\" style=\"width:100%\">";
 
   _html += "<p><a href=\"/button1\"><button style=\"width:33.3%\" >Pisca pisca</button></a></p>";
   _html += "<p><a href=\"/button2\"><button style=\"width:33.3%\" >Fade</button></a></p>";
-  _html += "<p><a href=\"/buttonN14\"><button style=\"width:33.3%\" >shunt_down_time</button></a></p>";
+  _html += "<p><a href=\"/buttonN14\"><button style=\"width:33.3%\" >Shut down</button></a></p>";
 
   if (nightMode)
   {
     _html += "<p>shunt down time in: ";
-    _html += String(millis() - tempo_salve);
+
+    if (tempo_max < tempo_left)
+      _html += " acabou :)";
+    else
+    {
+      int h = 0, mi = 0, s = 0, aux = 0;
+
+      //nao sei ainda
+
+      // _html += String(h);
+      // _html += "H ";
+      // _html += String(mi);
+      // _html += "Min ";
+      // _html += String(s);
+      // _html += "s ";
+      _html += "time left: " + String((tempo_max - tempo_left)/1000) + "s";
+
+      // Serial.print("hour: ");
+      // Serial.print(h);
+      // Serial.print("min: ");
+      // Serial.print(mi);
+      // Serial.print("seg: ");
+      // Serial.println(s);
+    }
+
     _html += "</p>";
   }
+  else
+    _html += "<p></p>";
 
   _html += "</div>";
 
-  _html += "<br>";
-  _html += "<br>";
-  _html += "<p>Algumas cores:</p>";
+  _html += "<p style=\"text-align: center\">Color</p>";
 
   _html += "<div class=\"btn-group\" style=\"width:100%\">";
 
@@ -348,15 +373,6 @@ String all_html ()
 
   _html += "</div>";
 
-
-  _html += "<br>";
-  _html += "<br>";
-  _html += "<br>";
-  _html += "<br>";
-  _html += "<br>";
-  _html += "<hr>";
-  _html += "<br>";
-  _html += "<p>Cores solidas</p>";
   _html += "<div class=\"btn-group\" style=\"width:100%\">";
 
   _html += "<p><a href=\"/button3\"><button style=\"width:33.3%; background-color: rgb(245, 30, 30);\" href=\"/button3\">Vermelho</button></a></p>";
@@ -365,6 +381,12 @@ String all_html ()
 
   _html += "</div>";
 
+  _html += "<br>";
+  _html += "<br>";
+  _html += "<br>";
+  _html += "<br>";
+
+  _html += "<p style=\"text-align: center\">By Wesley </p>";
   /*
     _html += "<br>";
     _html += "<br>";
@@ -539,6 +561,15 @@ void shotdowm_led()
 
 void shunt_down_time ()
 {
-  if (tempo_max < millis() - tempo_salve)
+  Serial.println("esta entrando aqui");
+
+  Serial.print("tempo_left: ");
+  Serial.println(tempo_left);
+
+  tempo_left = millis() - tempo_salve;
+  if (tempo_max < tempo_left)
+  {
     shotdowm_led;
+    Serial.println("acabooouuuuuuuuuuuuuuu");
+  }
 }
