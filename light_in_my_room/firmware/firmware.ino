@@ -1,16 +1,12 @@
-/*A fazer
-
-  (V) Ver se as cores estão boas 
-  ( ) Arrumar HTML
-  ( ) Olhar bug na troca de uma funcção para a outra
-  ( ) IP fixo
-*/
-
 int led_red = 14,
     led_gre = 12,
     led_blu = 13;
 
 int set = 2, set_old = 2;
+
+bool nightMode = false;
+int tempo_salve;
+float tempo_max = 3600000;
 
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
@@ -42,9 +38,9 @@ void setup()
       ESP.restart();
   }
 
-  IPAddress ip(192,168,1,25);
-  IPAddress gateway(192,168,1,1);
-  IPAddress subnet(255,255,255,0);
+  IPAddress ip(192, 168, 1, 25);
+  IPAddress gateway(192, 168, 1, 1);
+  IPAddress subnet(255, 255, 255, 0);
   WiFi.config(ip, gateway, subnet);
 
   Serial.println("IP address: ");
@@ -84,7 +80,7 @@ void loop()
 
   wifi();
 
-  if(set == 0)
+  if (set == 0)
     shotdowm_led();
   else if (set == 1)
     combination();
@@ -112,6 +108,13 @@ void loop()
     verde_escuro();
   else if (set == 13)
     amarelo();
+
+  if (nightMode)
+    shunt_down_time();
+
+//  Serial.print ("valor desse trem aqui: ");
+//  Serial.println(nightMode);
+//  delay(50);
 }
 
 
@@ -228,6 +231,16 @@ void wifi ()
       set_old = set;
       set = 13;
     }
+    else if (header.indexOf("GET /buttonN14") >= 0)
+    {
+      set_old = set;
+      set = 14;
+      nightMode = !nightMode;
+      tempo_salve = millis();
+
+      Serial.print ("valor desse trem aqui: ");
+      Serial.println(nightMode);
+    }
 
     header = "";
     client.stop();
@@ -247,7 +260,7 @@ String all_html ()
   _html += "<link rel=\"icon\" href=\"data:,\">";
 
   _html += "<style>";
-  
+
   _html += ".btn-group button {";
   _html += "background-color: #4CAF50;";
   _html += "border: 1px solid green; ";
@@ -279,17 +292,17 @@ String all_html ()
   _html += "<body>";
 
   _html += "<h1 style=\"text-align: center\">My Web page :D</h1>";
-  
+
   _html += "<div class=\"btn-group\" style=\"width:100%\">";
 
   _html += "<br>";
   _html += "<p><a href=\"/button0\"><button style=\"width:100%\" >Desligar</button></a></p>";
 
-	_html += "</div>";
+  _html += "</div>";
 
   _html += "<br>";
   _html += "<p>Modo atual: ";
-  if(set == 0)
+  if (set == 0)
     _html += "Desligado</p>";
   else if ((set >= 1) && (set <= 2))
     _html += "Funcoes</p>";
@@ -297,35 +310,43 @@ String all_html ()
     _html += "Cores solidas</p>";
   else if ((set >= 6) && (set <= 13))
     _html += "Cores</p>";
-  
+
 
   _html += "<br>";
 
   _html += "<p>Algumas funcoes:</p>";
-	_html += "<div class=\"btn-group\" style=\"width:100%\">";
+  _html += "<div class=\"btn-group\" style=\"width:100%\">";
 
-  _html += "<p><a href=\"/button1\"><button style=\"width:50%\" >Pisca pisca</button></a></p>";
-  _html += "<p><a href=\"/button2\"><button style=\"width:50%\" >Fade</button></a></p>";
+  _html += "<p><a href=\"/button1\"><button style=\"width:33.3%\" >Pisca pisca</button></a></p>";
+  _html += "<p><a href=\"/button2\"><button style=\"width:33.3%\" >Fade</button></a></p>";
+  _html += "<p><a href=\"/buttonN14\"><button style=\"width:33.3%\" >shunt_down_time</button></a></p>";
 
-	_html += "</div>";
+  if (nightMode)
+  {
+    _html += "<p>shunt down time in: ";
+    _html += String(millis() - tempo_salve);
+    _html += "</p>";
+  }
+
+  _html += "</div>";
 
   _html += "<br>";
   _html += "<br>";
-	_html += "<p>Algumas cores:</p>";
+  _html += "<p>Algumas cores:</p>";
 
-	_html += "<div class=\"btn-group\" style=\"width:100%\">";
+  _html += "<div class=\"btn-group\" style=\"width:100%\">";
 
   _html += "<p><a href=\"/button6\"><button style=\"width:25%\">Vermelho claro</button></a></p>";
- 	_html += "<p><a href=\"/button7\"><button style=\"width:25%\">Azul agua</button></a></p>";
+  _html += "<p><a href=\"/button7\"><button style=\"width:25%\">Azul agua</button></a></p>";
   _html += "<p><a href=\"/button8\"><button style=\"width:25%\">Verde agua</button></a></p>";
   _html += "<p><a href=\"/button9\"><button style=\"width:25%\">Lilas sleep</button></a></p>";
 
   _html += "<p><a href=\"/buttonN10\"><button style=\"width:25%\">Branco normal</button></a></p>";
- 	_html += "<p><a href=\"/buttonN11\"><button style=\"width:25%\">Azul escuro</button></a></p>";
+  _html += "<p><a href=\"/buttonN11\"><button style=\"width:25%\">Azul escuro</button></a></p>";
   _html += "<p><a href=\"/buttonN12\"><button style=\"width:25%\">Verde escuro</button></a></p>";
   _html += "<p><a href=\"/buttonN13\"><button style=\"width:25%\">Amarelo bebe</button></a></p>";
 
-	_html += "</div>";
+  _html += "</div>";
 
 
   _html += "<br>";
@@ -335,85 +356,29 @@ String all_html ()
   _html += "<br>";
   _html += "<hr>";
   _html += "<br>";
-	_html += "<p>Cores solidas</p>";
-	_html += "<div class=\"btn-group\" style=\"width:100%\">";
+  _html += "<p>Cores solidas</p>";
+  _html += "<div class=\"btn-group\" style=\"width:100%\">";
 
- 	_html += "<p><a href=\"/button3\"><button style=\"width:33.3%; background-color: rgb(245, 30, 30);\" href=\"/button3\">Vermelho</button></a></p>";
- 	_html += "<p><a href=\"/button4\"><button style=\"width:33.3%; background-color: rgb(30, 245, 30);\" href=\"/button4\">Verde</button></a></p>";
- 	_html += "<p><a href=\"/button5\"><button style=\"width:33.3%; background-color: rgb(30, 30, 245);\" href=\"/button5\">Azul</button></a></p>";
+  _html += "<p><a href=\"/button3\"><button style=\"width:33.3%; background-color: rgb(245, 30, 30);\" href=\"/button3\">Vermelho</button></a></p>";
+  _html += "<p><a href=\"/button4\"><button style=\"width:33.3%; background-color: rgb(30, 245, 30);\" href=\"/button4\">Verde</button></a></p>";
+  _html += "<p><a href=\"/button5\"><button style=\"width:33.3%; background-color: rgb(30, 30, 245);\" href=\"/button5\">Azul</button></a></p>";
 
-	_html += "</div>";
-  
+  _html += "</div>";
+
   /*
-  _html += "<br>";
-  _html += "<br>";
-  _html += "<p>for dev: <br> set: ";
-  _html += set;
-  _html += "; set old: ";
-  _html += set_old;
-  _html += "</p>";*/
+    _html += "<br>";
+    _html += "<br>";
+    _html += "<p>for dev: <br> set: ";
+    _html += set;
+    _html += "; set old: ";
+    _html += set_old;
+    _html += "</p>";*/
 
   _html += "</body></html>";
 
   return _html;
 }
 
-String all_html_test ()
-{
-  String _html = "";
-  _html += "HTTP/1.1 200 OK";
-  _html += "Content-type:text/html";
-  _html += "Connection: close";
-  // Display the HTML web page
-
-  _html += "<!DOCTYPE html><html>";
-
-  _html += "<head>";
-
-  _html += "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">";
-  _html += "<link rel=\"icon\" href=\"data:,\">";
-  
-  _html += "<style>html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}";
-  _html += ".button { background-color: #195B6A; border: none; color: white; padding: 16px 40px;";
-  _html += "text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer;}";
-  _html += ".button2 {background-color: #77878A;}</style>";
-
-  _html += "</head>";
-
-  // Web Page Heading
-  _html += "<body>";
-  _html += "<h1>Web Server select function and color :D</h1>";
-
-	_html += "<p>Same function:</p>";
-	_html += "<div class=\"btn-group\" style=\"width:100%\">";
-
-  _html += "<p><a href=\"/button1\"><button style=\"width:50%\" >Pisca pisca></button></a></p>";
-  _html += "<p><a href=\"/button2\"><button style=\"width:50%\" >Fade></button></a></p>";
-
-	_html += "</div>";
-
-	_html += "<p>Basic color:</p>";
-
-	_html += "<div class=\"btn-group\" style=\"width:100%\">";
-
- 	_html += "<button style=\"width:33.3%\" href=\"/button3\">Vermelho</button>";
- 	_html += "<button style=\"width:33.3%\" href=\"/button4\">Verde</button>";
- 	_html += "<button style=\"width:33.3%\" href=\"/button5\">Azul</button>";
-
-	_html += "</div>";
-
-	_html += "<p>Four buttons in a group:</p>";
-	_html += "<div class=\"btn-group\" style=\"width:100%\">";
- 	_html += "<button style=\"width:25%\">Apple</button>";
- 	_html += "<button style=\"width:25%\">Samsung</button>";
-  _html += "<button style=\"width:25%\">Sony</button>";
-  _html += "<button style=\"width:25%\">HTC</button>";
-	_html += "</div>";
-
- 	_html += "</body></html>";
-
-  return _html;
-}
 
 void fade (int del)
 {
@@ -570,4 +535,10 @@ void shotdowm_led()
   digitalWrite(led_red, LOW);
   digitalWrite(led_gre, LOW);
   digitalWrite(led_blu, LOW);
+}
+
+void shunt_down_time ()
+{
+  if (tempo_max < millis() - tempo_salve)
+    shotdowm_led;
 }
