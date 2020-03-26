@@ -1,20 +1,13 @@
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.security.cert.Certificate;
 import java.io.*;
-
-import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.SSLPeerUnverifiedException;
-
 import java.net.URLConnection;
-import java.util.Scanner;
 
 
 void setup ()
 {
   try  
         {   
-            URL url = new URL("http://192.168.1.25/button5");   
+            URL url = new URL("http://192.168.1.25/button0");   
             URLConnection urlcon=url.openConnection();  
             System.out.println("------------------------------------");   
                 
