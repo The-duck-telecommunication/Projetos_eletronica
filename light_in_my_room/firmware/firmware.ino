@@ -261,6 +261,7 @@ void wifi ()
       set = 14;
       nightMode = !nightMode;
       tempo_salve = millis();
+      client.println("<script>location.href = \"http://192.168.1.25\";</script>");
 
       Serial.print ("Entrou aquiiiiiiiiiii valor desse trem aqui: ");
       Serial.println(nightMode);
@@ -281,7 +282,7 @@ String all_html ()
 
   _html += "<!DOCTYPE html><html>";
   _html += "<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">";
-  _html += "<meta http-equiv=\"refresh\" content=\"10; url=http://192.168.1.25\" >";
+  _html += "<meta http-equiv=\"refresh\" content=\"120; url=http://192.168.1.25\" >";
   _html += "<link rel=\"icon\" href=\"data:,\">";
 
   _html += "<style>";
