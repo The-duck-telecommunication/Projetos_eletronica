@@ -2,7 +2,9 @@ int led_red = 14,
     led_gre = 12,
     led_blu = 13;
 
-int set = 2, set_old = 2;
+int R = 100, G = 125, B = 120;
+
+int set = 4, set_old;
 
 bool nightMode = false;
 float tempo_salve, tempo_left;
@@ -112,8 +114,8 @@ void loop()
   if (nightMode)
     shunt_down_time();
 
-  Serial.print ("valor desse trem aqui: ");
-  Serial.println(nightMode);
+  //Serial.print ("valor desse trem aqui: ");
+  //Serial.println(nightMode);
   delay(50);
 }
 
@@ -159,30 +161,6 @@ void wifi ()
           currentLine += c;
         }
       }
-    }
-
-    if (header.startsWith("GET /RGB") >= 0)
-    {
-      int R_aux = header.indexOf(",");
-      int G_aux = header.indexOf(",");
-      int B_aux = header.indexOf(")");
-
-      int R = int(R_aux);
-      int G = int(G_aux);
-      int B = int(B_aux);
-
-      Serial.print(R_aux);Serial.print(",");
-      Serial.print(G_aux);Serial.print(",");
-      Serial.println(B_aux);
-
-      Serial.print(R);Serial.print(",");
-      Serial.print(G);Serial.print(",");
-      Serial.println(B);
-
-      cores_RGB(R, G, B);
-
-      set_old = 99;
-      set = 99;
     }
 
     if (header.indexOf("GET /button0") >= 0)
@@ -263,8 +241,44 @@ void wifi ()
       tempo_salve = millis();
       client.println("<script>location.href = \"http://192.168.1.25\";</script>");
 
-      Serial.print ("Entrou aquiiiiiiiiiii valor desse trem aqui: ");
-      Serial.println(nightMode);
+      //Serial.print ("Entrou aquiiiiiiiiiii valor desse trem aqui: ");
+      //Serial.println(nightMode);
+    }
+    else if (header.indexOf("GET /RGB(") >= 0)
+    {
+      int R_index = header.indexOf(",");
+      int G_index = header.indexOf(",", R_index + 1);
+      int B_index = header.indexOf(")", G_index);
+
+      String R_aux = header.substring(header.indexOf("(") + 1, R_index);
+      String G_aux = header.substring(R_index + 1, G_index);
+      String B_aux = header.substring(G_index + 1, B_index);
+
+      R = R_aux.toInt();
+      G = G_aux.toInt();
+      B = B_aux.toInt();
+
+      Serial.print("index: ");
+      Serial.print(header.indexOf("GET /RGB("));Serial.print(";");
+      Serial.print(R_index);Serial.print(";");
+      Serial.print(G_index);Serial.print(";");
+      Serial.println(B_index);
+
+      Serial.print("aux: ");
+      Serial.print(R_aux);Serial.print(";");
+      Serial.print(G_aux);Serial.print(";");
+      Serial.println(B_aux);
+
+      Serial.print("value: ");
+      Serial.print(R);Serial.print(";");
+      Serial.print(G);Serial.print(";");
+      Serial.println(B);
+
+      cores_RGB(R, G, B);
+
+      set_old = set;
+      set = 99;
+      client.println("<script>location.href = \"http://192.168.1.25\";</script>");
     }
 
     header = "";
@@ -296,6 +310,16 @@ String all_html ()
   _html += "float: left;";
   _html += "}";
 
+  _html += ".btn-group2 button {";
+    _html += "background-color: RGB(";
+    _html += R; _html += ","; _html += G; _html += ","; _html += B;
+    _html += ");";
+  _html += "border: 1px solid green; ";
+  _html += "color: white;";
+  _html += "padding: 10px 24px;";
+  _html += "cursor: pointer;";
+  _html += "}";
+
   _html += ".btn-group:after {";
   _html += "content: "";";
   _html += "clear: both;";
@@ -308,6 +332,51 @@ String all_html ()
 
   _html += ".btn-group button:hover {";
   _html += "background-color: #3e8e41;";
+  _html += "}";
+
+  _html += ".slidecontainer {";
+  _html += "width: 100%;";
+  _html += "}";
+
+  _html += ".slider {";
+  _html += "-webkit-appearance: none;";
+  _html += "width: 100%;";
+  _html += "height: 25px;";
+  _html += "background: #d3d3d3;";
+  _html += "outline: none;";
+  _html += "opacity: 0.7;";
+  _html += "-webkit-transition: .2s;";
+  _html += "transition: opacity .2s;";
+  _html += "}";
+
+  _html += ".slider:hover {";
+  _html += "opacity: 1;";
+  _html += "}";
+
+  _html += ".slider::-webkit-slider-thumb {";
+  _html += "-webkit-appearance: none;";
+  _html += "appearance: none;";
+  _html += "width: 25px;";
+  _html += "height: 25px;";
+  _html += "background: #4CAF50;";
+  _html += "cursor: pointer;";
+  _html += "}";
+
+  _html += ".slider::-moz-range-thumb {";
+  _html += "width: 25px;";
+  _html += "height: 25px;";
+  _html += "cursor: pointer;";
+  _html += "background: #00ff00;";
+  _html += "}";
+
+  _html += "#myRed::-moz-range-thumb {";
+  _html += "background: #ff0000;";
+  _html += "}";
+  _html += "#myGre::-moz-range-thumb {";
+  _html += "background: #00ff00;";
+  _html += "}";
+  _html += "#myBlu::-moz-range-thumb {";
+  _html += "background: #0000ff;";
   _html += "}";
 
   _html += "</style>";
@@ -382,7 +451,30 @@ String all_html ()
 
   _html += "</div>";
 
+  _html += "<hr>";
   _html += "<p style=\"text-align: center\">Color</p>";
+
+  _html += "<div class=\"slidecontainer\">";
+  _html += "<input type=\"range\" min=\"0\" max=\"255\" value=\"";
+    _html += R;
+    _html +="\" class=\"slider\" id=\"myRed\">";
+  _html += "<input type=\"range\" min=\"0\" max=\"255\" value=\"";
+    _html += G;
+    _html += "\" class=\"slider\" id=\"myGre\">";
+  _html += "<input type=\"range\" min=\"0\" max=\"255\" value=\"";
+    _html += B;
+    _html += "\" class=\"slider\" id=\"myBlu\">";
+  _html += "</div>";
+
+  _html += "<p>RGB (<a id=\"valueRed\"></a>, <span id=\"valueGre\"></span>, <span id=\"valueBlu\"></span>)</p>";
+
+  _html += "<div class=\"btn-group2\" style=\"width:100%\">";
+  _html += "<p><a><button style=\"width:100%\" Onclick=\"enviarRGB()\">Send</button></a></p>";
+  _html += "</div>";
+
+
+
+  _html += "<hr>";
 
   _html += "<div class=\"btn-group\" style=\"width:100%\">";
 
@@ -421,11 +513,43 @@ String all_html ()
     _html += set_old;
     _html += "</p>";*/
 
-  _html += "</body></html>";
+  _html += "</body>";
+
+  _html += "<script>";
+  _html += "var sliderRED = document.getElementById(\"myRed\");";
+  _html += "var outputRED = document.getElementById(\"valueRed\");";
+  _html += "outputRED.innerHTML = sliderRED.value;";
+
+  _html += "sliderRED.oninput = function() {";
+  _html += "outputRED.innerHTML = this.value;";
+  _html += "};";
+
+  _html += "var sliderGRE = document.getElementById(\"myGre\");";
+  _html += "var outputGRE = document.getElementById(\"valueGre\");";
+  _html += "outputGRE.innerHTML = sliderGRE.value;";
+
+  _html += "sliderGRE.oninput = function() {";
+  _html += "outputGRE.innerHTML = this.value;";
+  _html += "};";
+
+  _html += "var sliderBLU = document.getElementById(\"myBlu\");";
+  _html += "var outputBLU = document.getElementById(\"valueBlu\");";
+  _html += "outputBLU.innerHTML = sliderBLU.value;";
+
+  _html += "sliderBLU.oninput = function() {";
+  _html += "outputBLU.innerHTML = this.value;";
+  _html += "};";
+
+  _html += "function enviarRGB ()";
+  _html += "{";
+  _html += "location.href = \"http://192.168.1.25/RGB(\" + sliderRED.value + \",\" + sliderGRE.value + \",\" + sliderBLU.value + \")\";";
+  _html += "}";
+  _html += "</script>";
+
+  _html += "</html>";
 
   return _html;
 }
-
 
 void fade (int del)
 {
