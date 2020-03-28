@@ -161,6 +161,30 @@ void wifi ()
       }
     }
 
+    if (header.startsWith("GET /RGB") >= 0)
+    {
+      int R_aux = header.indexOf(",");
+      int G_aux = header.indexOf(",");
+      int B_aux = header.indexOf(")");
+
+      int R = int(R_aux);
+      int G = int(G_aux);
+      int B = int(B_aux);
+
+      Serial.print(R_aux);Serial.print(",");
+      Serial.print(G_aux);Serial.print(",");
+      Serial.println(B_aux);
+
+      Serial.print(R);Serial.print(",");
+      Serial.print(G);Serial.print(",");
+      Serial.println(B);
+
+      cores_RGB(R, G, B);
+
+      set_old = 99;
+      set = 99;
+    }
+
     if (header.indexOf("GET /button0") >= 0)
     {
       set_old = set;
@@ -550,6 +574,17 @@ void amarelo ()
   analogWrite(led_red, 255);
   analogWrite(led_gre, 220);
   analogWrite(led_blu, 0);
+}
+
+void cores_RGB (int R_aux, int G_aux, int B_aux)
+{
+  R_aux = constrain(R_aux, 0, 255);
+  G_aux = constrain(G_aux, 0, 255);
+  B_aux = constrain(B_aux, 0, 255);
+
+  analogWrite(led_red, R_aux);
+  analogWrite(led_gre, G_aux);
+  analogWrite(led_blu, B_aux);
 }
 
 void shotdowm_led()
