@@ -167,71 +167,85 @@ void wifi ()
     {
       set_old = set;
       set = 0;
+      nightMode = false;
     }
     else if (header.indexOf("GET /button1") >= 0)
     {
       set_old = set;
       set = 1;
+      nightMode = false;
     }
     else if (header.indexOf("GET /button2") >= 0)
     {
       set_old = set;
       set = 2;
+      nightMode = false;
     }
     else if (header.indexOf("GET /button3") >= 0)
     {
       set_old = set;
       set = 3;
+      nightMode = false;
     }
     else if (header.indexOf("GET /button4") >= 0)
     {
       set_old = set;
       set = 4;
+      nightMode = false;
     }
     else if (header.indexOf("GET /button5") >= 0)
     {
       set_old = set;
       set = 5;
+      nightMode = false;
     }
     else if (header.indexOf("GET /button6") >= 0)
     {
       set_old = set;
       set = 6;
+      nightMode = false;
     }
     else if (header.indexOf("GET /button7") >= 0)
     {
       set_old = set;
       set = 7;
+      nightMode = false;
     }
     else if (header.indexOf("GET /button8") >= 0)
     {
       set_old = set;
       set = 8;
+      nightMode = false;
     }
     else if (header.indexOf("GET /button9") >= 0)
     {
       set_old = set;
       set = 9;
+      nightMode = false;
     }
     else if (header.indexOf("GET /buttonN10") >= 0)
     {
       set_old = set;
       set = 10;
+      nightMode = false;
     }
     else if (header.indexOf("GET /buttonN11") >= 0)
     {
       set_old = set;
       set = 11;
+      nightMode = false;
     }
     else if (header.indexOf("GET /buttonN12") >= 0)
     {
       set_old = set;
       set = 12;
+      nightMode = false;
     }
     else if (header.indexOf("GET /buttonN13") >= 0)
     {
       set_old = set;
       set = 13;
+      nightMode = false;
     }
     else if (header.indexOf("GET /buttonN14") >= 0)
     {
@@ -551,6 +565,7 @@ String all_html ()
   return _html;
 }
 
+
 void fade (int del)
 {
   Serial.println("primeiro for");
@@ -627,89 +642,71 @@ void combination ()
   shotdowm_led();
 }
 
-void vermelhao ()
-{
-  digitalWrite(led_red, HIGH);
-  digitalWrite(led_gre, LOW);
-  digitalWrite(led_blu, LOW);
-}
-
-void verdao ()
-{
-  digitalWrite(led_red, LOW);
-  digitalWrite(led_gre, HIGH);
-  digitalWrite(led_blu, LOW);
-}
-
-void azulao ()
-{
-  digitalWrite(led_red, LOW);
-  digitalWrite(led_gre, LOW);
-  digitalWrite(led_blu, HIGH);
-}
-
-void vermelhao_claro()
-{
-  digitalWrite(led_red, HIGH);
-  analogWrite(led_gre, 150);
-  analogWrite(led_blu, 150);
-}
-void branco()
-{
-  digitalWrite(led_red, HIGH);
-  digitalWrite(led_gre, HIGH);
-  digitalWrite(led_blu, HIGH);
-}
-
-void azul_agua()
-{
-  analogWrite(led_red, 200);
-  analogWrite(led_gre, 200);
-  digitalWrite(led_blu, HIGH);
-}
-void azul_escuro()
-{
-  analogWrite(led_red, 50);
-  analogWrite(led_gre, 50);
-  analogWrite(led_blu, 200);
-}
-
-void verde_agua ()
-{
-  digitalWrite(led_red, LOW);
-  digitalWrite(led_gre, HIGH);
-  digitalWrite(led_blu, HIGH);
-}
-void verde_escuro ()
-{
-  digitalWrite(led_red, LOW);
-  analogWrite(led_gre, 200);
-  analogWrite(led_blu, 50);
-}
-
-void lilas ()
-{
-  analogWrite(led_red, 180);
-  analogWrite(led_gre, 50);
-  analogWrite(led_blu, 180);
-}
-
-void amarelo ()
-{
-  analogWrite(led_red, 255);
-  analogWrite(led_gre, 220);
-  analogWrite(led_blu, 0);
-}
-
 void cores_RGB (int R_aux, int G_aux, int B_aux)
 {
-  R_aux = constrain(R_aux, 0, 255);
-  G_aux = constrain(G_aux, 0, 255);
-  B_aux = constrain(B_aux, 0, 255);
+  R_aux = map(R_aux, 0, 255, 0, 1024);
+  G_aux = map(G_aux, 0, 255, 0, 1024);
+  B_aux = map(B_aux, 0, 255, 0, 1024);
+
+  R_aux = constrain(R_aux, 0, 1024);
+  G_aux = constrain(G_aux, 0, 1024);
+  B_aux = constrain(B_aux, 0, 1024);
 
   analogWrite(led_red, R_aux);
   analogWrite(led_gre, G_aux);
   analogWrite(led_blu, B_aux);
+}
+
+void vermelhao ()
+{
+  cores_RGB(255, 0, 0);
+}
+
+void verdao ()
+{
+  cores_RGB(0, 255, 0);
+}
+
+void azulao ()
+{
+  cores_RGB(0, 0, 255);
+}
+
+void vermelhao_claro()
+{
+  cores_RGB(255, 171, 171);
+}
+void branco()
+{
+  cores_RGB(255, 255, 255);
+}
+
+void azul_agua()
+{
+  cores_RGB(148, 255, 255);
+}
+void azul_escuro()
+{
+  cores_RGB(0, 88, 138);
+}
+
+void verde_agua ()
+{
+  cores_RGB(0, 255, 255);
+}
+void verde_escuro ()
+{
+  cores_RGB(48, 214, 55);
+}
+
+void lilas ()
+{
+  cores_RGB(193, 22, 196);
+}
+
+void amarelo ()
+{
+  cores_RGB(249, 247, 61);
 }
 
 void shotdowm_led()
