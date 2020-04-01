@@ -318,7 +318,7 @@ String all_html ()
   _html += ".btn-group button {";
   _html += "background-color: #4CAF50;";
   _html += "border: 1px solid green; ";
-  _html += "color: white;";
+  _html += "color: black;";
   _html += "padding: 10px 24px;";
   _html += "cursor: pointer;";
   _html += "float: left;";
@@ -492,15 +492,15 @@ String all_html ()
 
   _html += "<div class=\"btn-group\" style=\"width:100%\">";
 
-  _html += "<p><a href=\"/button6\"><button style=\"width:25%\">Vermelho claro</button></a></p>";
-  _html += "<p><a href=\"/button7\"><button style=\"width:25%\">Azul agua</button></a></p>";
-  _html += "<p><a href=\"/button8\"><button style=\"width:25%\">Verde agua</button></a></p>";
-  _html += "<p><a href=\"/button9\"><button style=\"width:25%\">Lilas sleep</button></a></p>";
+  _html += "<p><a href=\"/button6\"><button style=\"width:25%; background-color: rgb(255, 171, 171);\">Vermelho claro</button></a></p>";
+  _html += "<p><a href=\"/button7\"><button style=\"width:25%; background-color: rgb(148, 255, 255);\">Azul agua</button></a></p>";
+  _html += "<p><a href=\"/button8\"><button style=\"width:25%; background-color: rgb(0, 255, 255);\">Verde agua</button></a></p>";
+  _html += "<p><a href=\"/button9\"><button style=\"width:25%; background-color: rgb(193, 22, 196);color: white;\">Lilas sleep</button></a></p>";
 
-  _html += "<p><a href=\"/buttonN10\"><button style=\"width:25%\">Branco normal</button></a></p>";
-  _html += "<p><a href=\"/buttonN11\"><button style=\"width:25%\">Azul escuro</button></a></p>";
-  _html += "<p><a href=\"/buttonN12\"><button style=\"width:25%\">Verde escuro</button></a></p>";
-  _html += "<p><a href=\"/buttonN13\"><button style=\"width:25%\">Amarelo bebe</button></a></p>";
+  _html += "<p><a href=\"/buttonN10\"><button style=\"width:25%; background-color: rgb(200, 200, 200);\">Branco normal</button></a></p>";
+  _html += "<p><a href=\"/buttonN11\"><button style=\"width:25%; background-color: rgb(0, 88, 138);color: white;\">Azul escuro</button></a></p>";
+  _html += "<p><a href=\"/buttonN12\"><button style=\"width:25%; background-color: rgb(48, 214, 55);color: white;\">Verde escuro</button></a></p>";
+  _html += "<p><a href=\"/buttonN13\"><button style=\"width:25%; background-color: rgb(249, 247, 61);\">Amarelo bebe</button></a></p>";
 
   _html += "</div>";
 

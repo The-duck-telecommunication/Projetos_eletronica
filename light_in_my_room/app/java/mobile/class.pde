@@ -52,20 +52,20 @@ void openURL (String _str_button)
   {
     URL url = new URL(IP + _str_button);
     URLConnection urlcon=url.openConnection();
-    System.out.println("------------------------------------");   
+    System.out.println("------------------------------------");
 
     //get the inputstream of the open connection.
     BufferedReader br = new BufferedReader(new InputStreamReader (urlcon.getInputStream()));
     String i;
-    
-    while ((i = br.readLine()) != null)    
-            {   
-                System.out.println(i);   
-            }   
+
+    while ((i = br.readLine()) != null)
+            {
+                System.out.println(i);
+            }
   }
   catch (Exception e)
   {
-    System.out.println(e); 
+    System.out.println(e);
   }
 }
 
@@ -147,7 +147,7 @@ class Button
       translate(xpos, ypos);
 
       fill(cor);
-      stroke(cor);    
+      stroke(cor);
       rect(0, 0, xdel, ydel, 20, 20, 20, 20);
 
       textAlign(CENTER, CENTER);
