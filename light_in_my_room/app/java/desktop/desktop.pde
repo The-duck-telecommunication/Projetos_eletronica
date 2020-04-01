@@ -12,16 +12,20 @@ Button color2 = new Button(); //green
 Button color3 = new Button(); //blue
 
 //outras cores
-Button color4 = new Button(); //
-Button color5 = new Button(); //
-Button color6 = new Button(); //
-Button color7 = new Button(); //
-Button color8 = new Button(); //
-Button color9 = new Button(); //
-Button color10 = new Button(); //
-Button color11 = new Button(); //
+Button color4 = new Button();
+Button color5 = new Button();
+Button color6 = new Button();
+Button color7 = new Button();
+Button color8 = new Button();
+Button color9 = new Button();
+Button color10 = new Button();
+Button color11 = new Button();
 
-
+Slider slider1 = new Slider();
+Slider slider2 = new Slider();
+Slider slider3 = new Slider();
+Button enviar_RGB = new Button();
+int R = 97, G = 97, B = 97;
 
 //bibliotecas
 import java.net.URL;
@@ -75,8 +79,29 @@ void setup ()
   shutdown.value(0);
   shutdown.str_button("buttonN14");
 
+  slider1.pos(int(0.05*width), int(height/2 - 75));
+  slider1.size(int(0.9*width), int (10));
+  slider1.value(97);
+  slider1.cor(#c63535);
 
-  color1.pos(int(0.05*width), int(0.81*height));
+  slider2.pos(int(0.05*width), int(height/2 - 35));
+  slider2.size(int(0.9*width), int (10));
+  slider2.value(97);
+  slider2.cor(#7188ff);
+
+  slider3.pos(int(0.05*width), int(height/2 + 5));
+  slider3.size(int(0.9*width), int (10));
+  slider3.value(97);
+  slider3.cor(#8aff39);
+
+  enviar_RGB.pos(int(0.05*width), int(height/2 + 30));
+  enviar_RGB.size(int(0.9*width), 40);
+  enviar_RGB.cor(#616161);
+  enviar_RGB.teSize(20);
+  enviar_RGB.label("RGB");
+  enviar_RGB.str_button("RGB");
+
+  color1.pos(int(0.05*width), int(0.90*height));
   color1.size(int(0.9*width/3), 40);
   color1.cor(#ff0000);
   color1.teSize(18);
@@ -198,7 +223,14 @@ void draw ()
     color9.display();
     color10.display();
     color11.display();
+
+    slider1.display();
+    slider2.display();
+    slider3.display();
+
+    enviar_RGB.display();
   }
+
   power.display();
 }
 
@@ -347,6 +379,39 @@ void mousePressed ()
       color3.value(1);
     }
   }
+
+  if(slider1.confere())
+  {
+    float _aux_value = map(mouseX, slider1.xpos, slider1.xpos + slider1.xdel, 0, 255);
+    slider1.cor(#c63535);
+    slider1.value(_aux_value);
+
+    R = int(_aux_value);
+    enviar_RGB.cor(color(R, G, B));
+  }
+
+  if(slider2.confere())
+  {
+    float _aux_value = map(mouseX, slider2.xpos, slider2.xpos + slider2.xdel, 0, 255);
+    slider2.cor(#7188ff);
+    slider2.value(_aux_value);
+
+    G = int(_aux_value);
+    enviar_RGB.cor(color(R, G, B));
+  }
+
+  if(slider3.confere())
+  {
+    float _aux_value = map(mouseX, slider3.xpos, slider3.xpos + slider3.xdel, 0, 255);
+    slider3.cor(#8aff39);
+    slider3.value(_aux_value);
+
+    B = int(_aux_value);
+    enviar_RGB.cor(color(R, G, B));
+  }
+
+  if(enviar_RGB.confere())
+    function_enviarRGB();
 }
 
 void mouseMoved()

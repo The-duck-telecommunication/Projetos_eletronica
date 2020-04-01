@@ -32,14 +32,20 @@ Button color2 = new Button(); //green
 Button color3 = new Button(); //blue
 
 //outras cores
-Button color4 = new Button(); //
-Button color5 = new Button(); //
-Button color6 = new Button(); //
-Button color7 = new Button(); //
-Button color8 = new Button(); //
-Button color9 = new Button(); //
-Button color10 = new Button(); //
-Button color11 = new Button(); //
+Button color4 = new Button();
+Button color5 = new Button();
+Button color6 = new Button();
+Button color7 = new Button();
+Button color8 = new Button();
+Button color9 = new Button();
+Button color10 = new Button();
+Button color11 = new Button();
+
+Slider slider1 = new Slider();
+Slider slider2 = new Slider();
+Slider slider3 = new Slider();
+Button enviar_RGB = new Button();
+int R = 97, G = 97, B = 97;
 
 //bibliotecas
 
@@ -93,8 +99,29 @@ public void setup ()
   shutdown.value(0);
   shutdown.str_button("buttonN14");
 
+  slider1.pos(PApplet.parseInt(0.05f*width), PApplet.parseInt(height/2 - 75));
+  slider1.size(PApplet.parseInt(0.9f*width), PApplet.parseInt (10));
+  slider1.value(97);
+  slider1.cor(0xffc63535);
 
-  color1.pos(PApplet.parseInt(0.05f*width), PApplet.parseInt(0.81f*height));
+  slider2.pos(PApplet.parseInt(0.05f*width), PApplet.parseInt(height/2 - 35));
+  slider2.size(PApplet.parseInt(0.9f*width), PApplet.parseInt (10));
+  slider2.value(97);
+  slider2.cor(0xff7188ff);
+
+  slider3.pos(PApplet.parseInt(0.05f*width), PApplet.parseInt(height/2 + 5));
+  slider3.size(PApplet.parseInt(0.9f*width), PApplet.parseInt (10));
+  slider3.value(97);
+  slider3.cor(0xff8aff39);
+
+  enviar_RGB.pos(PApplet.parseInt(0.05f*width), PApplet.parseInt(height/2 + 30));
+  enviar_RGB.size(PApplet.parseInt(0.9f*width), 40);
+  enviar_RGB.cor(0xff616161);
+  enviar_RGB.teSize(20);
+  enviar_RGB.label("RGB");
+  enviar_RGB.str_button("RGB");
+
+  color1.pos(PApplet.parseInt(0.05f*width), PApplet.parseInt(0.90f*height));
   color1.size(PApplet.parseInt(0.9f*width/3), 40);
   color1.cor(0xffff0000);
   color1.teSize(18);
@@ -216,7 +243,14 @@ public void draw ()
     color9.display();
     color10.display();
     color11.display();
+
+    slider1.display();
+    slider2.display();
+    slider3.display();
+
+    enviar_RGB.display();
   }
+
   power.display();
 }
 
@@ -365,6 +399,39 @@ public void mousePressed ()
       color3.value(1);
     }
   }
+
+  if(slider1.confere())
+  {
+    float _aux_value = map(mouseX, slider1.xpos, slider1.xpos + slider1.xdel, 0, 255);
+    slider1.cor(0xffc63535);
+    slider1.value(_aux_value);
+
+    R = PApplet.parseInt(_aux_value);
+    enviar_RGB.cor(color(R, G, B));
+  }
+
+  if(slider2.confere())
+  {
+    float _aux_value = map(mouseX, slider2.xpos, slider2.xpos + slider2.xdel, 0, 255);
+    slider2.cor(0xff7188ff);
+    slider2.value(_aux_value);
+
+    G = PApplet.parseInt(_aux_value);
+    enviar_RGB.cor(color(R, G, B));
+  }
+
+  if(slider3.confere())
+  {
+    float _aux_value = map(mouseX, slider3.xpos, slider3.xpos + slider3.xdel, 0, 255);
+    slider3.cor(0xff8aff39);
+    slider3.value(_aux_value);
+
+    B = PApplet.parseInt(_aux_value);
+    enviar_RGB.cor(color(R, G, B));
+  }
+
+  if(enviar_RGB.confere())
+    function_enviarRGB();
 }
 
 public void mouseMoved()
@@ -507,6 +574,14 @@ public void function_shutdown ()
   openURL(shutdown.str_button);
 }
 
+public void function_enviarRGB ()
+{
+  String _string = concat("RGB(", String("2"));
+  print(_string);
+
+  openURL(_string);
+}
+
 float time_left = 0;
 public void function_shutdown_display ()
 {
@@ -554,9 +629,80 @@ public void function_selec ()
   text("IP: " + IP, 100, 20);
 }
 
+class Slider
+{
+  int xpos, ypos, xdel , ydel, cor, teSize = 10;
+  float value;
+  String lab = "", str_button = "";
+
+  Slider ()
+  {
+    //nothing
+  }
+
+  public void pos(int _xpos, int _ypos)
+  {
+    xpos = _xpos;
+    ypos = _ypos;
+  }
+  public void size(int _xdel, int _ydel)
+  {
+    xdel = _xdel;
+    ydel = _ydel;
+  }
+  public void cor(int _cor)
+  {
+    cor = _cor;
+  }
+  public void label (String _lab)
+  {
+    lab = _lab;
+  }
+  public void value (float _value)
+  {
+    value = _value;
+  }
+  public void teSize (int _teSize)
+  {
+    teSize = _teSize;
+  }
+  public void str_button (String _str_button)
+  {
+    str_button = _str_button;
+  }
+  public boolean confere()
+  {
+    if((mouseX <= xpos + xdel) && (mouseX >= xpos))
+    {
+      if((mouseY <= ypos + ydel) && (mouseY >= ypos))
+        return true;
+      else
+        return false;
+    }
+    else
+      return false;
+  }
+
+  public void display()
+  {
+    pushMatrix();
+      translate(xpos, ypos);
+
+      fill(cor);
+      stroke(cor);
+      rect(0, 0, xdel, ydel, 20, 20, 20, 20);
+
+      fill(0xff000000);
+      stroke(0xff000000);
+      float _aux_value = map(value, 0, 255, 0, xdel);
+      rect(_aux_value, -10, 15, 30);
+    popMatrix();
+  }
+}
+
 class Button
 {
-  int xpos, ypos, xdel , ydel, cor, teSize = 1;
+  int xpos, ypos, xdel , ydel, cor, teSize = 10;
   float value;
   String lab = "", str_button = "";
 

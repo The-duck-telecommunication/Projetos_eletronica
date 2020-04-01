@@ -75,6 +75,14 @@ void function_shutdown ()
   openURL(shutdown.str_button);
 }
 
+void function_enviarRGB ()
+{
+  String _string = concat("RGB(", String(" 2"));
+  print(_string);
+
+  openURL(_string);
+}
+
 float time_left = 0;
 void function_shutdown_display ()
 {
@@ -124,20 +132,78 @@ void function_selec ()
 
 class Slider
 {
+  int xpos, ypos, xdel , ydel, cor, teSize = 10;
+  float value;
+  String lab = "", str_button = "";
+
   Slider ()
   {
     //nothing
   }
 
+  void pos(int _xpos, int _ypos)
+  {
+    xpos = _xpos;
+    ypos = _ypos;
+  }
+  void size(int _xdel, int _ydel)
+  {
+    xdel = _xdel;
+    ydel = _ydel;
+  }
+  void cor(int _cor)
+  {
+    cor = _cor;
+  }
+  void label (String _lab)
+  {
+    lab = _lab;
+  }
+  void value (float _value)
+  {
+    value = _value;
+  }
+  void teSize (int _teSize)
+  {
+    teSize = _teSize;
+  }
+  void str_button (String _str_button)
+  {
+    str_button = _str_button;
+  }
+  boolean confere()
+  {
+    if((mouseX <= xpos + xdel) && (mouseX >= xpos))
+    {
+      if((mouseY <= ypos + ydel) && (mouseY >= ypos))
+        return true;
+      else
+        return false;
+    }
+    else
+      return false;
+  }
+
   void display()
   {
-    /* code */
+    pushMatrix();
+      translate(xpos, ypos);
+
+      fill(cor);
+      stroke(cor);
+      rect(0, 0, xdel, ydel, 20, 20, 20, 20);
+
+      fill(#000000);
+      stroke(#000000);
+      float _aux_value = map(value, 0, 255, 0, xdel);
+      rect(_aux_value, -10, 15, 30);
+    popMatrix();
   }
 }
 
 class Button
 {
-  int xpos, ypos, xdel , ydel, cor, teSize = 1;
+  int xpos, ypos, xdel , ydel, cor, teSize = 10;
   float value;
   String lab = "", str_button = "";
 
