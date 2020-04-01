@@ -18,6 +18,48 @@ void function_color3 ()
   openURL(color3.str_button);
 }
 
+
+void function_color4 ()
+{
+  openURL(color4.str_button);
+}
+
+void function_color5 ()
+{
+  openURL(color5.str_button);
+}
+
+void function_color6 ()
+{
+  openURL(color6.str_button);
+}
+
+void function_color7 ()
+{
+  openURL(color7.str_button);
+}
+
+void function_color8 ()
+{
+  openURL(color8.str_button);
+}
+
+void function_color9 ()
+{
+  openURL(color9.str_button);
+}
+
+void function_color10 ()
+{
+  openURL(color10.str_button);
+}
+
+void function_color11 ()
+{
+  openURL(color11.str_button);
+}
+
+
 void function_piscar ()
 {
   openURL(piscar.str_button);
@@ -78,6 +120,19 @@ void function_selec ()
   textSize(15);
   fill(#000000);
   text("IP: " + IP, 100, 20);
+}
+
+class Slider
+{
+  Slider ()
+  {
+    //nothing
+  }
+
+  void display()
+  {
+    /* code */
+  }
 }
 
 class Button

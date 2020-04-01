@@ -317,7 +317,7 @@ String all_html ()
 
   _html += ".btn-group button {";
   _html += "background-color: #4CAF50;";
-  _html += "border: 1px solid green; ";
+  _html += "border: 1px solid black; ";
   _html += "color: black;";
   _html += "padding: 10px 24px;";
   _html += "cursor: pointer;";

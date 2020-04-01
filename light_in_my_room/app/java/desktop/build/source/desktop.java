@@ -33,6 +33,13 @@ Button color3 = new Button(); //blue
 
 //outras cores
 Button color4 = new Button(); //
+Button color5 = new Button(); //
+Button color6 = new Button(); //
+Button color7 = new Button(); //
+Button color8 = new Button(); //
+Button color9 = new Button(); //
+Button color10 = new Button(); //
+Button color11 = new Button(); //
 
 //bibliotecas
 
@@ -86,29 +93,95 @@ public void setup ()
   shutdown.value(0);
   shutdown.str_button("buttonN14");
 
-  color1.pos(PApplet.parseInt(0.05f*width), PApplet.parseInt(height/2));
+
+  color1.pos(PApplet.parseInt(0.05f*width), PApplet.parseInt(0.81f*height));
   color1.size(PApplet.parseInt(0.9f*width/3), 40);
   color1.cor(0xffff0000);
-  color1.teSize(15);
+  color1.teSize(18);
   color1.label("Vermelho");
   color1.value(0);
   color1.str_button("button3");
 
-  color2.pos(PApplet.parseInt(color1.xpos + color1.xdel), PApplet.parseInt(height/2));
+  color2.pos(PApplet.parseInt(color1.xpos + color1.xdel), color1.ypos);
   color2.size(PApplet.parseInt(0.9f*width/3), 40);
   color2.cor(0xff00ff00);
-  color2.teSize(15);
+  color2.teSize(18);
   color2.label("Verde");
   color2.value(0);
   color2.str_button("button4");
 
-  color3.pos(PApplet.parseInt(color2.xpos + color2.xdel), PApplet.parseInt(height/2));
+  color3.pos(PApplet.parseInt(color2.xpos + color2.xdel), color1.ypos);
   color3.size(PApplet.parseInt(0.9f*width/3), 40);
   color3.cor(0xff0000ff);
-  color3.teSize(15);
+  color3.teSize(18);
   color3.label("Azul");
   color3.value(0);
   color3.str_button("button5");
+
+
+  color4.pos(PApplet.parseInt(0.05f*width), color1.ypos - 100);
+  color4.size(PApplet.parseInt(0.9f*width/4), 40);
+  color4.cor(0xffffabab);
+  color4.teSize(10);
+  color4.label("Ver Claro");
+  color4.value(0);
+  color4.str_button("button6");
+
+  color5.pos(color4.xpos + color4.xdel, color4.ypos);
+  color5.size(PApplet.parseInt(0.9f*width/4), 40);
+  color5.cor(0xff94ffff);
+  color5.teSize(10);
+  color5.label("Azul agua");
+  color5.value(0);
+  color5.str_button("button7");
+
+  color6.pos(color5.xpos + color5.xdel, color4.ypos);
+  color6.size(PApplet.parseInt(0.9f*width/4), 40);
+  color6.cor(0xff00ffff);
+  color6.teSize(10);
+  color6.label("Verde agua");
+  color6.value(0);
+  color6.str_button("button8");
+
+  color7.pos(color6.xpos + color6.xdel, color4.ypos);
+  color7.size(PApplet.parseInt(0.9f*width/4), 40);
+  color7.cor(0xffc116c4);
+  color7.teSize(10);
+  color7.label("Lilas sleep");
+  color7.value(0);
+  color7.str_button("button9");
+
+  color8.pos(PApplet.parseInt(0.05f*width), PApplet.parseInt(3 + color4.ydel + color4.ypos));
+  color8.size(PApplet.parseInt(0.9f*width/4), 40);
+  color8.cor(0xffefefef);
+  color8.teSize(10);
+  color8.label("Branco");
+  color8.value(0);
+  color8.str_button("buttonN10");
+
+  color9.pos(color8.xpos + color8.xdel, PApplet.parseInt(3 + color4.ydel + color4.ypos));
+  color9.size(PApplet.parseInt(0.9f*width/4), 40);
+  color9.cor(0xff00588a);
+  color9.teSize(10);
+  color9.label("Azul escuro");
+  color9.value(0);
+  color9.str_button("buttonN11");
+
+  color10.pos(color9.xpos + color9.xdel, PApplet.parseInt(3 + color4.ydel + color4.ypos));
+  color10.size(PApplet.parseInt(0.9f*width/4), 40);
+  color10.cor(0xff00ffff);
+  color10.teSize(10);
+  color10.label("Verde escuro");
+  color10.value(0);
+  color10.str_button("buttonN12");
+
+  color11.pos(color10.xpos + color10.xdel, PApplet.parseInt(3 + color4.ydel + color4.ypos));
+  color11.size(PApplet.parseInt(0.9f*width/4), 40);
+  color11.cor(0xfff9f73d);
+  color11.teSize(10);
+  color11.label("Amarelo");
+  color11.value(0);
+  color11.str_button("buttonN13");
 }
 
 public void draw ()
@@ -133,6 +206,16 @@ public void draw ()
     color1.display();
     color2.display();
     color3.display();
+
+    color4.display();
+    color5.display();
+    color6.display();
+    color7.display();
+
+    color8.display();
+    color9.display();
+    color10.display();
+    color11.display();
   }
   power.display();
 }
@@ -210,6 +293,30 @@ public void mousePressed ()
       time_start = millis()/1000;
     }
   }
+
+  if(color4.confere())
+    function_color4();
+
+  if(color5.confere())
+    function_color5();
+
+  if(color6.confere())
+    function_color6();
+
+  if(color7.confere())
+    function_color7();
+
+  if(color8.confere())
+    function_color8();
+
+  if(color9.confere())
+    function_color9();
+
+  if(color10.confere())
+    function_color10();
+
+  if(color11.confere())
+    function_color11();
 
   if(color1.confere())
   {
@@ -342,6 +449,48 @@ public void function_color3 ()
 {
   openURL(color3.str_button);
 }
+
+
+public void function_color4 ()
+{
+  openURL(color4.str_button);
+}
+
+public void function_color5 ()
+{
+  openURL(color5.str_button);
+}
+
+public void function_color6 ()
+{
+  openURL(color6.str_button);
+}
+
+public void function_color7 ()
+{
+  openURL(color7.str_button);
+}
+
+public void function_color8 ()
+{
+  openURL(color8.str_button);
+}
+
+public void function_color9 ()
+{
+  openURL(color9.str_button);
+}
+
+public void function_color10 ()
+{
+  openURL(color10.str_button);
+}
+
+public void function_color11 ()
+{
+  openURL(color11.str_button);
+}
+
 
 public void function_piscar ()
 {
