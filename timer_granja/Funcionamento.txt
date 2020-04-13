@@ -1,0 +1,5 @@
+*Chaveamento oscilador com lm5555
+*Circuito potência com relé 12v
+
+* Fonte chaveada. A capacitiva não entrega corrente suficiente pois a 30mA a tensão média é de 200mV
+ 
