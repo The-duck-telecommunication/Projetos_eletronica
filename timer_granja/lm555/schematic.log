@@ -2,20 +2,20 @@ Circuit: * C:\Users\wesle\Desktop\projetos\timer_granja\lm555\schematic.asc
 
 Direct Newton iteration for .op point succeeded.
 
-Date: Mon Apr 13 10:43:15 2020
-Total elapsed time: 0.090 seconds.
+Date: Wed Apr 22 13:36:10 2020
+Total elapsed time: 0.811 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 5646
-traniter = 5617
-tranpoints = 1820
-accept = 1636
-rejected = 184
+totiter = 4553
+traniter = 4524
+tranpoints = 1580
+accept = 1453
+rejected = 127
 matrix size = 16
 fillins = 2
 solver = Normal
-Matrix Compiler1: 626 bytes object code size  0.2/0.1/[0.1]
-Matrix Compiler2: off  [0.1]/0.2/0.1
+Matrix Compiler1: 626 bytes object code size  0.3/0.1/[0.1]
+Matrix Compiler2: 996 bytes object code size  0.1/0.2/[0.2]
 
